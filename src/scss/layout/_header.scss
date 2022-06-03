@@ -1,0 +1,74 @@
+.header {
+    background-color: $verde;
+    
+
+    .contenido_header{
+       padding: ($separacion - 3rem) 0 ;
+       @include tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        h1{
+            text-align: center;
+        }
+       }
+    }
+   
+        
+    h1{
+      color:$blanco;
+      
+      cursor: pointer;
+     
+      margin: 2rem;
+      
+      
+    }    
+    
+        
+           
+    
+      
+
+}    
+
+    
+ .navegacion_principal{
+
+    a{
+        color:$blanco;
+        margin:2rem;
+        font-size: 1.2em;
+       
+    }
+ }       
+
+ .boton__nav:hover{
+       color: $amarillo;
+ }
+    
+
+
+
+.contenido_header{
+    @include desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        h1{
+            text-align: center;
+        }
+    }
+}
+
+.contenido_header{
+    @include mini{
+    display: flex;
+    
+    justify-content:space-between;
+    align-items: center; }
+    h1{
+        text-align: center;
+    }
+}
+
